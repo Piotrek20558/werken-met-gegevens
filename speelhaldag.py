@@ -1,7 +1,11 @@
-Toegangsticket = 7.45
-Personen = 4
-Pervijfminuten = 0.37
-Speeltijd = 45
-Aantalmin = 5
+Toegangsticket = 745
+Personen = int(input('aantal personen'))
+Pervijfminuten = 37
+Minimaletijd = 5
+Aantalmin = int(input('aantal minuten'))
 
-print (Toegangsticket*Personen+Speeltijd/Aantalmin*Pervijfminuten*Personen)
+bedrag = ((Toegangsticket*Personen)+(Aantalmin/Minimaletijd*Pervijfminuten*Personen))  / 100
+
+uitkomst = 'Dit geweldige dagje uit met '+ str( Personen ) + ' mensen in de Speelhal met '+ str(Aantalmin) + ' minuten VR kost je maar ' + str( bedrag ) +' euro'
+
+print(uitkomst)
